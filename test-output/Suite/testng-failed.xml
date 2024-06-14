@@ -5,9 +5,9 @@
     <classes>
       <class name="Bajaj.Bike.AutoTest">
         <methods>
-          <include name="start"/>
           <include name="engineStart"/>
           <include name="browserStopTest"/>
+          <include name="removeEnquiry"/>
         </methods>
       </class> <!-- Bajaj.Bike.AutoTest -->
     </classes>

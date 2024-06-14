@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Bajaj.Bike.AutoTest" class="method navigator-link" hash-for-method="removeCookieDisclaimer">removeCookieDisclaimer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Bajaj.Bike.AutoTest" class="method navigator-link" hash-for-method="removeEnquiry">removeEnquiry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Bajaj.Bike.AutoTest" class="method navigator-link" hash-for-method="start">start</a> <!-- method navigator-link -->
@@ -124,6 +134,20 @@
               <span class="class-name">Bajaj.Bike.AutoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeCookieDisclaimer">
+                  </a> <!-- removeCookieDisclaimer -->
+                  <span class="method-name">removeCookieDisclaimer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeEnquiry">
+                  </a> <!-- removeEnquiry -->
+                  <span class="method-name">removeEnquiry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="start">
@@ -185,16 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'start')
 data.setCell(0, 2, 'Bajaj.Bike.AutoTest')
-data.setCell(0, 3, 15193);
+data.setCell(0, 3, 15238);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'removeEnquiry')
+data.setCell(1, 2, 'Bajaj.Bike.AutoTest')
+data.setCell(1, 3, 5420);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'removeCookieDisclaimer')
+data.setCell(2, 2, 'Bajaj.Bike.AutoTest')
+data.setCell(2, 3, 94);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -227,11 +259,19 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">start</span>
-                <span class="method-start">4879 ms</span>
+                <span class="method-start">6946 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeEnquiry</span>
+                <span class="method-start">22184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeCookieDisclaimer</span>
+                <span class="method-start">27604 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">browserStopTest</span>
-                <span class="method-start">20072 ms</span>
+                <span class="method-start">27703 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

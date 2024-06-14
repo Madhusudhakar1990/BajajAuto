@@ -1,5 +1,7 @@
 package Bajaj.Bike;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -16,7 +18,8 @@ public class AutoTest {
 	public static Base base;
 
 	@BeforeTest
-	public void engineStart() throws IOException {
+	public void engineStart() throws IOException 
+	{
 
 		Base.setupPro();
 		driver = Base.browserStart();
@@ -24,7 +27,8 @@ public class AutoTest {
 	}
 
 	@Test
-	public void start() throws InterruptedException {
+	public void start() throws InterruptedException 
+	{
 
 		bajajMainPage = new BajajMainPage(driver);
 		Thread.sleep(5000);
@@ -32,11 +36,31 @@ public class AutoTest {
 
 	}
 
+	@Test(dependsOnMethods = { "start" })
+	public void removeEnquiry() throws InterruptedException 
+	{
+		bajajMainPage = new BajajMainPage(driver);
+		bajajMainPage.enquireBoard();
+		Thread.sleep(5000);
+	}
+
+	@Test(dependsOnMethods = { "start", "removeEnquiry" })
+	public void removeCookieDisclaimer() 
+	{
+		bajajMainPage = new BajajMainPage(driver);
+		bajajMainPage.cookieDisclaimer();
+	}
+
 	@AfterTest
-	public void browserStopTest() {
+	public void browserStopTest() throws InterruptedException 
+	{
 
 		base = new Base(driver);
 		Base.browserStop();
+
+		Thread.sleep(0);
+
+		// String name = new String();
 
 	}
 

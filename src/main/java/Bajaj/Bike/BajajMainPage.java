@@ -22,6 +22,11 @@ public class BajajMainPage extends Base
 		
 	}
 	
+	
+	@FindBy(xpath="//a[@class='closebtn']") WebElement closeButton;
+	@FindBy(xpath= "//a[text()='I Understand']") WebElement cookie;
+	
+	
 
 public  void subsribeFrame() throws InterruptedException
 {
@@ -37,4 +42,17 @@ public  void subsribeFrame() throws InterruptedException
 
 }
 	
+public void enquireBoard()
+{
+	System.out.println("driver got into enquiry :"+driver);
+	closeButton.click();
+	System.out.println("driver gotout of enquiry :"+driver);
+}
+
+
+public void cookieDisclaimer()
+{
+	cookie.click();
+}
+
 }
