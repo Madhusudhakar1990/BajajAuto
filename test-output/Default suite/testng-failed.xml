@@ -7,7 +7,7 @@
         <methods>
           <include name="start"/>
           <include name="engineStart"/>
-          <include name="browserStop"/>
+          <include name="browserStopTest"/>
         </methods>
       </class> <!-- Bajaj.Bike.AutoTest -->
     </classes>

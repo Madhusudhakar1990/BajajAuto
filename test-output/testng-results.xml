@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-14T20:05:53 IST" name="Suite" finished-at="2024-06-14T20:06:21 IST" duration-ms="27929">
+  <suite started-at="2024-06-21T01:29:52 IST" name="Suite" finished-at="2024-06-21T01:31:34 IST" duration-ms="102720">
     <groups>
     </groups>
-    <test started-at="2024-06-14T20:05:53 IST" name="Test" finished-at="2024-06-14T20:06:21 IST" duration-ms="27929">
+    <test started-at="2024-06-21T01:29:52 IST" name="Test" finished-at="2024-06-21T01:31:34 IST" duration-ms="102720">
+      <class name="Bajaj.Bike.BajajTest">
+        <test-method signature="pulsarNs400()[pri:0, instance:Bajaj.Bike.BajajTest@b9b00e0]" started-at="2024-06-21T01:31:34 IST" name="pulsarNs400" finished-at="2024-06-21T01:31:34 IST" depends-on-methods="start" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pulsarNs400 -->
+      </class> <!-- Bajaj.Bike.BajajTest -->
       <class name="Bajaj.Bike.AutoTest">
-        <test-method is-config="true" signature="engineStart()[pri:0, instance:Bajaj.Bike.AutoTest@55a147cc]" started-at="2024-06-14T20:05:53 IST" name="engineStart" finished-at="2024-06-14T20:06:00 IST" duration-ms="6918" status="PASS">
+        <test-method is-config="true" signature="engineStart()[pri:0, instance:Bajaj.Bike.AutoTest@750e2b97]" started-at="2024-06-21T01:29:52 IST" name="engineStart" finished-at="2024-06-21T01:30:23 IST" duration-ms="31441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- engineStart -->
-        <test-method signature="start()[pri:0, instance:Bajaj.Bike.AutoTest@55a147cc]" started-at="2024-06-14T20:06:00 IST" name="start" finished-at="2024-06-14T20:06:15 IST" duration-ms="15238" status="PASS">
+        <test-method signature="start()[pri:0, instance:Bajaj.Bike.AutoTest@750e2b97]" started-at="2024-06-21T01:30:23 IST" name="start" finished-at="2024-06-21T01:31:34 IST" duration-ms="70558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="removeEnquiry()[pri:0, instance:Bajaj.Bike.AutoTest@55a147cc]" started-at="2024-06-14T20:06:15 IST" name="removeEnquiry" finished-at="2024-06-14T20:06:20 IST" depends-on-methods="Bajaj.Bike.AutoTest.start" duration-ms="5420" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeEnquiry -->
-        <test-method signature="removeCookieDisclaimer()[pri:0, instance:Bajaj.Bike.AutoTest@55a147cc]" started-at="2024-06-14T20:06:20 IST" name="removeCookieDisclaimer" finished-at="2024-06-14T20:06:20 IST" depends-on-methods="Bajaj.Bike.AutoTest.removeEnquiry, Bajaj.Bike.AutoTest.start" duration-ms="94" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeCookieDisclaimer -->
-        <test-method is-config="true" signature="browserStopTest()[pri:0, instance:Bajaj.Bike.AutoTest@55a147cc]" started-at="2024-06-14T20:06:20 IST" name="browserStopTest" finished-at="2024-06-14T20:06:21 IST" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="browserStopTest()[pri:0, instance:Bajaj.Bike.AutoTest@750e2b97]" started-at="2024-06-21T01:31:34 IST" name="browserStopTest" finished-at="2024-06-21T01:31:34 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserStopTest -->
