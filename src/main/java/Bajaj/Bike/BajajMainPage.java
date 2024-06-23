@@ -8,11 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import bajaUtility.Base;
 
-public class BajajMainPage extends Base {
+public class BajajMainPage extends Base 
+{
 	public WebDriver driver;
 	public BajajMainPage bajajMainPage;
-
-	public BajajMainPage(WebDriver driver) {
+	
+	public BajajMainPage(WebDriver driver) 
+	{
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -57,13 +59,18 @@ public class BajajMainPage extends Base {
 		Thread.sleep(5000);
 	}
 
-	public void searchBike() {
+	public void searchBike() throws InterruptedException {
 
 		rightArrow.click();
+		Thread.sleep(500);
 		rightArrow.click();
+		Thread.sleep(500);
 		leftArrow.click();
+		Thread.sleep(500);
 		rightArrow.click();
+		Thread.sleep(500);
 		rightArrow.click();
+		Thread.sleep(500);
 		leftArrow.click();
 		
 	}

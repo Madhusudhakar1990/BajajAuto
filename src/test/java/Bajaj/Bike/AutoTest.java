@@ -34,18 +34,19 @@ public class AutoTest {
 		bajajMainPage.move();
 		Thread.sleep(5000);
 		bajajMainPage.searchBike();
+		Base.browserStop();
 	}
 	
 	
 	
 
-	@AfterTest
-	public void browserStopTest() throws InterruptedException 
-	{
-		base = new Base(driver);
-	//	Base.browserStop();
-	
-
-	}
+//	@AfterTest
+//	public void browserStopTest() throws InterruptedException 
+//	{
+//		base = new Base(driver);
+//	//	Base.browserStop();
+//	
+//
+//	}
 
 }

@@ -3,11 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Bajaj.Bike.BajajTest">
+        <methods>
+          <include name="colorCheck"/>
+          <include name="pulsarNs400"/>
+          <include name="engineStart"/>
+        </methods>
+      </class> <!-- Bajaj.Bike.BajajTest -->
       <class name="Bajaj.Bike.AutoTest">
         <methods>
           <include name="start"/>
           <include name="engineStart"/>
-          <include name="browserStopTest"/>
         </methods>
       </class> <!-- Bajaj.Bike.AutoTest -->
     </classes>
