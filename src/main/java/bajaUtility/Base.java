@@ -13,12 +13,17 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 public class Base {
 
 	public static WebDriver driver;
 	public static Properties prop;
 	public static Actions ac;
 	public static WebDriverWait wait;
+	public static ExtentReports reprt;
+	public static ExtentSparkReporter report;
 
 	public Base(WebDriver driver) {
 		Base.driver = driver;
@@ -30,6 +35,21 @@ public class Base {
 		FileReader read = new FileReader(path);
 		prop.load(read);
 
+	}
+	
+	public static void report()
+	{
+	//	String reportPath = System.getProperty("user.dir")+"//extentReport//Bajaj.html";
+		String reportPath = System.getProperty("user.dir")+"//Report//Bajaj.html";
+		
+		ExtentSparkReporter report = new ExtentSparkReporter(reportPath);
+		
+		report.config().setDocumentTitle("ExtentReport");
+		report.config().setReportName("TestIng NG report");
+
+		reprt = new ExtentReports();
+		reprt.attachReporter(report);
+		reprt.setSystemInfo("Tester", "Madhu");
 	}
 
 	public static WebDriver browserStart() {

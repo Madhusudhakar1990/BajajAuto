@@ -18,12 +18,14 @@ public class AutoTest {
 	public void engineStart() throws IOException 
 	{
 		Base.setupPro();
+		Base.report();
 		driver = Base.browserStart();
 	}
 
 	@Test
 	public void start() throws InterruptedException 
 	{
+		Base.reprt.createTest("main url started ");
 		bajajMainPage = new BajajMainPage(driver);
 		Thread.sleep(5000);
 		bajajMainPage.subsribeFrame();
@@ -35,8 +37,11 @@ public class AutoTest {
 		Thread.sleep(5000);
 		bajajMainPage.searchBike();
 		Base.browserStop();
+		Base.reprt.flush();
 	}
 	
+//	Base.reprt.createTest("main url started ");
+//	Base.reprt.flush();
 	
 	
 
