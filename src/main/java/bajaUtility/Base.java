@@ -12,11 +12,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class Base {
+public class Base extends Listeners
+{
 
 	public static WebDriver driver;
 	public static Properties prop;
@@ -36,20 +36,24 @@ public class Base {
 		prop.load(read);
 
 	}
-	
-	public static void report()
-	{
-	//	String reportPath = System.getProperty("user.dir")+"//extentReport//Bajaj.html";
-		String reportPath = System.getProperty("user.dir")+"//Report//Bajaj.html";
-		
-		ExtentSparkReporter report = new ExtentSparkReporter(reportPath);
-		
-		report.config().setDocumentTitle("ExtentReport");
+
+	public static ExtentReports report() {
+		String reportPath = "C:\\Users\\ymadh\\eclipse-workspace\\Bike\\BajajReport\\BajajAuto.html";
+//		String reportPath = System.getProperty("user.dir")+"//Report//Bajaj.html";
+//		
+		report = new ExtentSparkReporter(reportPath);
+//		
+		report.config().setDocumentTitle("Bajaj report");
 		report.config().setReportName("TestIng NG report");
 
 		reprt = new ExtentReports();
 		reprt.attachReporter(report);
 		reprt.setSystemInfo("Tester", "Madhu");
+
+		System.out.println("Reporting is done ");
+		
+		return reprt;
+
 	}
 
 	public static WebDriver browserStart() {

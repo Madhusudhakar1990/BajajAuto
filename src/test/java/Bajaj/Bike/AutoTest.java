@@ -25,7 +25,7 @@ public class AutoTest {
 	@Test
 	public void start() throws InterruptedException 
 	{
-		Base.reprt.createTest("main url started ");
+		Base.reprt.createTest("start ");
 		bajajMainPage = new BajajMainPage(driver);
 		Thread.sleep(5000);
 		bajajMainPage.subsribeFrame();

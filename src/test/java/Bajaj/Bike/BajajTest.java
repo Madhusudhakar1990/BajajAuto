@@ -16,8 +16,8 @@ public class BajajTest {
 	@Test(dependsOnMethods = { "start" })
 	public void engineStart() throws IOException 
 	{
-		//Base.setupPro();
-		Base.reprt.createTest("NS url started ");
+		Base.setupPro();
+		Base.reprt.createTest("engineStart");
 		driver = Base.browserStart();
 		Base.reprt.flush();
 	}
@@ -25,7 +25,7 @@ public class BajajTest {
 	@Test(dependsOnMethods = { "engineStart" })
 	public void pulsarNs400() throws InterruptedException {
 
-		Base.reprt.createTest("basic operation ");
+		Base.reprt.createTest("pulsarNs400");
 		BajajPulsarNS bajajPulsarNS = new BajajPulsarNS(driver);
 		bajajPulsarNS.pulsarNs400();
 		Base.reprt.flush();
@@ -35,7 +35,7 @@ public class BajajTest {
 	@Test(dependsOnMethods = { "pulsarNs400" })
 	public void colorCheck() throws InterruptedException
 	{
-		Base.reprt.createTest("color selction  ");
+		Base.reprt.createTest("colorCheck");
 		BajajPulsarNS bajajPulsarNS = new BajajPulsarNS(driver);
 		bajajPulsarNS.color();
 		Base.reprt.flush();
